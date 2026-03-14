@@ -66,6 +66,7 @@
       loadingCover.style.display = "";
 
       const script = document.createElement("script");
+      script.crossOrigin = "anonymous";
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
